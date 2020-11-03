@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    <!-- Linking CSS onto HTML --> 
 <head>
     <meta charset="UTF-8">
     <title>Lone Starfish</title>
     <link href="css/main.css" rel="stylesheet">
-
-    <!-- Adding Image -->
-    <div class="container">
-    <img src="images/lone-starfish-wide.jpg" alt="starfish header" style="width:100%;">
-    <div class="centered">Lone Starfish</div>
-    </div>
-    
 </head>
 
+    <!-- HTML Body -->
 <body>
+    <div id="page-wrap">
+
     <header>
+    <!-- Adding Image -->
+         <div class="container">
+        <img src="images/lone-starfish-wide.jpg" alt="starfish header" style="width:100%;">
+        <div class="centered">Lone Starfish</div>
     <!-- Site Navigation -->
-        <nav>
+        <nav class="navigation">
             <ul>
-                <li>
+                <li class="list">
                 <a href="index.html">HOME</a>
                 </li>
                 <li>
                 <a href="story.html">STORY</a>
                 </li>
+    <!-- On page link (Contact Form) -->
                 <li>
-                <a href="contact.html">CONTACT</a>
+                <a href="#contact">CONTACT</a>
                 </li>
             </ul>
         </nav>
+         </div>
     </header>
 <main>
     <!-- Main article -->
     <article>
-        <h2>Life of a Starfish</h2>
+        <h1 class="starfish">Life of a Starfish</h1>
+        <div class ="containerwrap">
+        <img src="../midterm/images/lone-starfish.jpg" alt="Starfish in the sand">
+        </div>
+        <div class="article">
             <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
             </p>
             </div>
     </article> 
+
+</main>
     <!-- Adding section for the unordered list - Facts List -->
     <section>
-        <h3>Facts About Starfish</h3>
+        <h2 class="factsstar">Facts About Starfish</h2>
+        <div class="factsstar">
         <ul>
             <li>
                 Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.
@@ -56,10 +66,15 @@
                 Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
             </li>
         </ul>
-</main>
+    </div>
+    </section>
+
     <!-- Adding section for the contact sheet -->
-    <h3>Contact to learn more</h3>
     <section>
+    <h2 class="contactsheet">Contact to learn more</h2>
+    <a name="contact"></a>
+    <div class="contactform">
+        <form>
         <div>
             <label for="fullname">Your Name</label>
             <input type="text" id="fullname" name="fullname">
@@ -73,42 +88,27 @@
             <textarea name="message" id="message"></textarea>
         </div>
         <div>
-            <h4>Would you like to visit the starfish?</h4>
+            <h4 class="visitstar">Would you like to visit the starfish?</h4>
                     <label for="yes">Yes</label>
                     <input type="radio" id="yes" name="past">
                     <label for="no">No</label>
                     <input type="radio" id="no" name="past">
+                    <label for="maybe">Maybe</label>
+                  <input type="radio" id="maybe" name="visit">
         </div>
-
+        <button class="enter" type="submit">Send</button>
+    </form>
+    </div>
     </section>
+
     <!-- Footer of the site -->
-<footer>
+    <div class="footer"></div>
+<footer class="footer">
+
     <!-- HTML Entities -->
     &copy; Lone Starfish.
+
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 </body>
-
-
-
-
-
-
-
 </html>

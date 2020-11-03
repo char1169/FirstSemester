@@ -1,38 +1,224 @@
+/* CSS Body */
 body {
     background: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    margin: 0 auto;
+    font-size: 1.5rem;
 }
 
-    .container {
-        position: relative;
-        text-align: center;
-        color: white;
-        width: 1000px;
-        font-size: 55px;
-        margin: 0 auto;
-      }
 
-      .centered {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0 auto;
-      }
-   
-    nav ul li {
-        display: inline-block;
-        width: 30%;
-        box-sizing: border-box;
-        text-align: center;
-        border-right: 1px solid black;
-        margin: 0 auto;
- 
-    }
 
-    nav ul a {
-        color: black;
-        text-decoration: none;
-    }
+/* Adding first heading (h1) of the website */
+.starfish{
+  font-weight: normal;
+  padding-left: 1rem;
+}
+
+
+
+/* Navigation */
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited {
+  background-color: #CDE5E2; 
+}
+.navigation ul {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+.navigation ul li {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+}
+.navigation ul a {
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  border-right: 0.5px solid black;
+  text-align: left;
+}
+
+
+
+/* Adding Header Image of Starfish */
+.container {
+  position: relative;
+  background-color: #CDE5E2;
+  width: 1000px;
+  font-size: 55px;
+  margin: 0 auto;
+}
+
+
+
+/* Adding Font over Header Image of Strfish */
+.centered {
+  position: absolute;
+  top: 50%;
+  font-size: 50px;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Adding a Float */
+.containerwrap {
+  position: relative;
+  width: 330px;
+  float: left;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+
+
+/* h1 Header "life of a Starfish" */
+.starfish h1 {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  font-weight: normal;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+
+
+/* Adding padding to the left of the article */
+.article p{
+  padding-left: 1rem;
+}
+
+
+
+/* Image properties */
+img {
+  width: 335px;
+  float: left;
+}
+
+
+
+/* Heading h2 "Facts about Starfish" */
+.factsstar{
+  font-weight: normal;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+
+
+/* Adding padding and fixing font size of the unordered list of facts */
+.section ul {
+  font-size:  1rem;
+  padding-right: 3rem;
+}
+
+
+
+/* Heading h2 "Contact to learn more" */
+.contactsheet{
+  padding-left: 1rem;
+}
+
+
+
+/* Adding properties to the Contact Form  */
+.contactform {
+    border-style: solid;
+    border-width: thin;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 1rem;
+}
+
+
+
+/* Adding padding a section*/
+.section a{
+  padding-left: 2rem;
+}
+
+
+
+/* Adding a block to the contact form (email) */
+input[type=email] {
+  display: block;
+  width: 97%;
+  margin: 10px 0;
+}
+
+
+
+/* Adding a block to the contact form (name) */
+input[type=text] {
+  display: block;
+  width: 97%;
+  margin: 10px 0;
+}
+
+
+
+/* Adding a block to the contact form (message) */
+textarea {
+  display: block;
+  border: 1px solid rgb(130, 127, 127);
+  margin: 10px 0;
+  padding-bottom: 2rem;
+  width: 97%;
+}
+
+
+
+/* Changing the font weight of the h4 "Would you like to visit the starfish?" */
+.visitstar {
+  font-weight: normal;
+}
+
+
+
+/* Changing the font weight of h2 "Contact to learn more" */
+.contactsheet {
+  font-weight: normal;
+}
+
+
+
+/* Adding the SEND Button with all the different properties */
+button[type=submit] {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  font-stretch: extra-expanded;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: black;
+  background-color: #CDE5E2;
+  text-align: center;
+  font-weight: lighter;
+  padding: 1rem;
+  border: 0.1px solid black;
+}
+
+
+
+/* Adding Site Footer */
+.footer {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+
+
+/* Page Wrap to center everything */
+#page-wrap {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(201, 228, 225);  
+}
