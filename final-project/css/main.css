@@ -1,0 +1,712 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+/* CSS */
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+body {
+    line-height: 1;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* TEXT STYLES */
+h1,
+h2,
+h3,
+h4 {
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 6.3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* MOBILE STYLES */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.main-logo {
+    max-width: 120px;
+    color: #c78c06;
+}
+
+/* NAVIGATION */
+
+.orange {
+    background-color: #c78c06;
+}
+
+.navigation .container {
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    background: #222222;
+    color: #c78c06;
+}
+
+.navigation .container li {
+    padding: 1rem;
+    text-align: center;
+    list-style-type: none;
+    color: #c78c06;
+}
+
+.nodecoration,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #c78c06;
+}
+
+.navigation .container li:nth-child(1) {
+    background-color: #c78c06;
+    text-align: left;
+}
+
+/* SEARCH BAR */
+.im-magnifier {
+    color: #c78c06;
+    background-color: #222222;
+    font-size: 33px;
+    text-align: center;
+}
+
+#search {
+    float: left;
+    margin: 0px;
+    padding-left: 2px;
+    width: 95%;
+    height: 3em;
+}
+
+.search-btn {
+    background-color: #222222;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #c78c06;
+    height: 3.2em;
+    width: 4%;
+}
+
+/* HOVER-OVER STYLES */
+
+.navigation .container a,
+.navigation .container a:link,
+.navigation .container a:visited {
+    display: block;
+    padding: 0.4em 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.navigation .container li:hover,
+.navigation .container li:focus,
+.navigation .container li.current {
+    background-color: #c78c06;
+}
+
+.navigation .container a:hover,
+.navigation .container a:focus,
+.navigation .container a.current {
+    color: #222;
+}
+
+/* WELCOME BANNER */
+.banner {
+    height: 1000px;
+    position: relative;
+    background-size: cover;
+    background: url(../images/main-banner.jpg) #222222 no-repeat center;
+}
+
+.welcome {
+    text-align: left;
+    align-content: center;
+    padding: 15rem;
+    padding-right: 3rem;
+    padding-left: 1rem;
+    position: absolute;
+    width: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    top: 125px;
+    bottom: 125px;
+}
+
+.welcome p {
+    font-size: 1rem;
+    margin-top: 3rem;
+    line-height: 2;
+}
+
+/* BUTTON "CONNECT WITH US" */
+.welcome a {
+    color: #222222;
+    background: #c78c06;
+    align-content: center;
+    font-size: 2em;
+    padding: 1.5em;
+    padding-bottom: 1.5em;
+    position: relative;
+}
+
+.btn {
+    display: inline-block;
+    margin: 1em 0;
+    padding: 2em;
+    background-color: #c78b07;
+    text-decoration: none;
+    color: #222222;
+}
+
+/* ICON ARROW INSIDE THE BUTTON*/
+.welcome .im-care-right {
+    color: #222222;
+    padding: 0.4rem;
+}
+
+/* MAIN CONTENT */
+
+/* ABOUT US */
+#about {
+    background-color: #ffe6ac;
+    padding: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-text {
+    padding-top: 15px;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* OUR SERVICES */
+#our-services {
+    background-color: white;
+    padding-top: 30px;
+}
+
+.services-text h2 {
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+/* DIGITAL TRANSFORMATION */
+.digital-text {
+    background-color: #ffe6ac;
+    padding-bottom: 0.5rem;
+}
+
+.digital-text h2 {
+    font-size: 3rem;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.digital-text p {
+    font-size: 1rem;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* DIGITAL PLANS BUTTON */
+#our-services a {
+    background: #222222;
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+    margin: 2rem;
+}
+
+/* MARKETING */
+#marketing {
+    background-color: white;
+    padding-top: 30px;
+}
+
+.marketing-text {
+    background-color: #ffe6ac;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 2rem;
+}
+
+.marketing-text h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.marketing-text p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* MARKETING PLANS BUTTON */
+#marketing a {
+    background: #222222;
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+/* VIDEO PRODUCTION */
+#video {
+    background-color: white;
+    padding-top: 30px;
+}
+
+.video-text {
+    background-color: #ffe6ac;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 2rem;
+}
+
+.video-text h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.video-text p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* VIDEO PLANS BUTTON */
+#video a {
+    background: #222222;
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+/* WEB DEVELOPMENT */
+#web {
+    background-color: white;
+    padding-top: 30px;
+}
+
+.web-text {
+    background-color: #ffe6ac;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 2rem;
+}
+
+.web-text h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.web-text p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* WEB PLANS BUTTON */
+#web a {
+    background: #222222;
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+/* PRINT */
+#print {
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.print-text {
+    background-color: #ffe6ac;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 2rem;
+}
+
+.print-text h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.print-text p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* PRINT PLANS BUTTON */
+#print a {
+    background: #222222;
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+/* OUR VISION */
+#vision {
+    background: url(../images/vision.jpg) #222222 no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+
+.vision-text {
+    padding: 2rem;
+    color: white;
+}
+
+.vision-text h2 {
+    color: white;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.vision-text p {
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+/* LEARN MORE BUTTON IN THE "OUR VISION" SECTION */
+.vision-text a {
+    background: #222222;
+    color: white;
+    border: 1px solid #c78c06;
+    font-size: 1.50rem;
+    padding: 2em 2em;
+}
+
+/* OUR TEAM */
+
+.our-team {
+    padding-top: 2.5rem;
+}
+
+.our-team h2 {
+    font-size: 3rem;
+}
+
+/* JOHN DOE */
+.jhondoe {
+    background: #ffe6ac;
+}
+
+.jhondoe h3 {
+    font-size: 2rem;
+    padding: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.jhondoe h4 {
+    font-size: 1.5rem;
+    padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 1;
+}
+
+.jhondoe p {
+    font-size: 1.2rem;
+    padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 0.5;
+}
+
+/* BOB RITE */
+.white {
+    padding-top: 1.5rem;
+}
+
+.bobrite {
+    background: #ffe6ac;
+}
+
+.bobrite h3 {
+    font-size: 2rem;
+    padding: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.bobrite h4 {
+    font-size: 1.5rem;
+    padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 1;
+}
+
+.bobrite p {
+    font-size: 1.2rem;
+    padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 0.5;
+}
+
+/* CONTACT US FORM */
+#contact {
+    padding-top: 40px;
+}
+
+.contact-us h2 {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+
+.contact-us h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.contact-us input[type=text],
+.contact-us input[type=email],
+.contact-us textarea {
+    width: 100%;
+    padding: 1.5em;
+    box-sizing: border-box;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    padding-bottom: 3rem;
+}
+
+.contact-us textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+}
+
+.contact-us button {
+    background-color: #222;
+    color: #c78c06;
+    border: none;
+    padding: 0.15em 0.25em;
+    font-size: 2rem;
+}
+
+/* HOURS OF OPERATION TABLE */
+.table {
+    width: 100%;
+}
+
+.table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1em;
+}
+
+thead {
+    background-color: #ffe6ac;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+footer {
+    background-color: #222222;
+    color: #c78b07;
+}
+
+footer a,
+footer a:link,
+footer a:visited {
+    color: inherit;
+}
+
+/* DESKTOP STYLES */
+@media screen and (min-width: 760px) {
+
+.container {
+    max-width: 1200px;
+    margin: 0em auto 1em auto;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 5em;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.9em;
+    }
+
+p {
+    font-size: 1em;
+}
+
+.btn {
+        font-size: 1.2em;
+}
+
+
+
+
+
