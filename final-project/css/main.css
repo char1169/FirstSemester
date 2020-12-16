@@ -675,28 +675,46 @@ footer a:visited {
     color: inherit;
 }
 
+
+
+/* -------------------------- */
+
+
+
+
+
 /* DESKTOP STYLES */
 @media screen and (min-width: 760px) {
 
 .container {
     max-width: 1200px;
-    margin: 0em auto 1em auto;
+    margin: auto;
+}
+
+/* TEXT STYLES */
+h1,
+h2,
+h3,
+h4 {
+    padding: 0.5rem 0;
+    font-weight: bold;
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 5em;
+    font-size: 6.3em;
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 h3 {
-    font-weight: bold;
-    font-size: 1.9em;
-    }
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
 
 p {
     font-size: 1em;
@@ -706,7 +724,58 @@ p {
         font-size: 1.2em;
 }
 
+/* HEADER */
 
+.site-header {
+    display: flex;
+    flex-direction: column;
+}
+.site-header .container {
+    display: grid;
+    align-items: center;
+ }
 
+.main-logo {
+    width: 120px;
+}
 
+.container {
+    display: flex;
+}
 
+.container li {
+    flex: 1;
+}
+
+/* BANNER */
+.welcome {
+    padding: 110px 1.5em 1.5em 1.5em;
+}
+
+/* ABOUT US */
+#about .container {
+    display: grid;
+}
+
+/* OUR SERVICES */
+#our-services {
+    background-color: #ffe6ac;
+    margin: 0;
+}
+
+/* OUR TEAM  */
+#our-team .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.1fr 1fr 1fr;
+}
+
+/* CONTACT US */
+#contact-us .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.1fr 1fr 0.4fr;
+        gap: 2em;
+    }
+
+}
